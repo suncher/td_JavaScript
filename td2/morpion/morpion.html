@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/morpionDesign.css">
+    <link rel="stylesheet" href="../Css/reset.css">
+    
+    <title>Morpion</title>
+   
+</head>
+<body>
+     <script src="./morpion.js" defer></script>
+    <header>
+        <h1>Morpion</h1>
+    </header>
+        <div>
+            <input type="text" id="playerOne" placeholder="Player 1"></input>
+            <input type="text" id="playerTwo" placeholder="Player 2"></input>
+        </div>
+    <div >   
+        <select id="sizeOfTable">
+            <option value="3" >3x3</option>
+            <option value="4">4x4</option>
+            <option value="5">5x5</option>
+            <option value="6">6x6</option>
+            <option value="7">7x7</option>
+            <option value="8">8x8</option>
+        </select>
+        
+        <select id="gameMode">
+            <option value="simple">Simple</option>
+            <option value="complet">complet</option>
+        </select>
+    </div>
+    <div> 
+        <button type="submit" id="startBtn" onclick="startGame()">Start</button>
+    </div>
+    <div> 
+        <button type="submit" id="restartBtn" onclick="restartGame()">restart</button>
+    </div>
+    <div id="display-value"></div>
+</body>
+</html>
