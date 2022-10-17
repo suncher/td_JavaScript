@@ -3,10 +3,6 @@ export class MorpionSimple extends Morpion {
   constructor(taille) {
     super(taille);
   }
-  setPion(symbole, y, x){
-    let sp = super.setPion(symbole, y, colonne);
-    return sp; 
-  }
  
   checkWin (symbole, y, x) {
     let winCondition = 3;
