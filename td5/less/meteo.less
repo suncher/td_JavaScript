@@ -1,0 +1,33 @@
+// add style to table
+table {
+    position: absolute;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: fit-content;
+    border: 1px solid #ddd;
+    top:50%;
+    left:40%;
+    vertical-align: middle;
+
+    td {
+        text-align: left;
+        padding: 8px;
+        
+    }
+    td,th {
+        border: 1px solid black;
+        text-align: left;
+        padding: 8px;  
+    }
+    tr:hover {
+        background-color: rgb(74, 72, 75);
+        color:white;
+        transition: all 0.3s ease;
+    }
+    th {
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+    }
+}
+

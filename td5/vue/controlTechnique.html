@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" type="text/css" href="../less/reset.less" />
+    <link rel="stylesheet/less" type="text/css" href="../less/controlTechnique.less" />
+    <script src="../js/ControleTechnique.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <title>Control technique</title>
+</head>
+
+<body>
+    <div class="content-title">
+        <h1>
+            Control technique
+        </h1>
+        <h4>Veuillez choisir entre département et commune</h4>
+    </div>
+    <div class="content-radio">
+        <input id="choixDepartement" type="radio" name="choix" value="departement" checked> <span>Departement</span> 
+        <input id="choixVille" type="radio" name="choix" value="commune" > <span>Commune</span>
+    </div>
+    <div class="printChoix">
+        <span ></span>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Tarif</th>
+                <th>Adresse</th>
+                <th>type vehicule</th>
+                <th>Energie</th>
+            </tr>
+        </thead>
+        <tbody id="fillTable">
+
+        </tbody>
+    </table>
+    <div class="content-button">
+        <button id="button-previous">previous</button>
+        <button id="button-next">next</button>
+    </div>
+</body>
+</html>
